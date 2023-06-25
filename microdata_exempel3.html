@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="no">
+    <head>
+        <title>Sidetittel</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" media="screen" href="css/articlestilark.css" />
+    </head>
+    <body>
+        <div id="logo">
+            <header>
+                <h1>Welcome to my project!</h1>
+            </header>
+            <main>
+                <article itemscope itemtype="http://schema.org/Restaurant">
+                        <h2 itemprop="name">Pizza</h2><br>
+                        Accepting reservations: <span itemprop="acceptsReservations">No</span><br>
+                        <a itemprop="menu" href="https://www.menu.no">Menu</a><br>
+                        Cuisine: <span itemprop="servesCuisine">Pastries</span><br>
+                        Price range: <span itemprop="priceRange">$$</span><br>
+                        <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                            <span itemprop="streetAddress">lyng 8A</span><br>
+                            <span itemprop="addressLocality">Oslo</span>, 
+                            <span itemprop="addressRegion">Norge</span> 
+                            <span itemprop="postalCode">0400</span>
+                        </div>
+                        Phone: <span itemprop="telephone">+4740000000</span>
+                        <img src="bilder/micro_eks3.jpg" alt="Microdata struktur">
+                </article>
+            </main>
+            <footer>
+                <p></p>
+                <p></p>
+            </footer>
+    </body>
+</html>

@@ -1,0 +1,260 @@
+@media only screen and (min-width: 700px) {
+  @font-face {
+    font-family: 'Xirod';
+    src: url("fonts/Xirod-Regular.eot");
+    src: url("fonts/Xirod-Regular.eot") format("embedded-opentype"), url("fonts/Xirod-Regular.woff2") format("woff2"), url("fonts/Xirod-Regular.woff") format("woff"), url("fonts/Xirod-Regular.ttf") format("truetype"), url("fonts/Xirod-Regular.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Aspergit';
+    src: url("fonts/Aspergit.eot");
+    src: url("fonts/Aspergit.eot") format("embedded-opentype"), url("fonts/Aspergit.woff2") format("woff2"), url("fonts/Aspergit.woff") format("woff"), url("fonts/Aspergit.ttf") format("truetype"), url("fonts/Aspergit.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  body {
+    margin: 0;
+    background-color: #c5ccc5;
+    background-image: url(background6.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "header header" "nav nav" "main aside" "footer footer";
+  }
+  #hoved_innhold {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-bottom: 1%;
+  }
+  img {
+    width: 150px;
+    height: 100px;
+    float: left;
+    margin-right: 10px;
+    box-shadow: 5px 5px black;
+  }
+  header {
+    grid-area: header;
+    background: url(header_background5.jpg) center no-repeat;
+    background-size: cover;
+    align-self: stretch;
+    justify-self: stretch;
+  }
+  nav {
+    grid-area: nav;
+    align-self: start;
+    justify-self: stretch;
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #222931;
+  }
+  nav ul li {
+    float: left;
+  }
+  nav ul li a {
+    font-family: Xirod;
+    display: block;
+    color: #4ef1ad;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  nav ul li a:hover {
+    background-color: #bd331b;
+  }
+  nav ul li a:visited {
+    color: #f58ff5;
+  }
+  main {
+    grid-area: main;
+    align-self: flex-start;
+    justify-self: stretch;
+  }
+  aside {
+    grid-area: aside;
+    align-self: stretch;
+    justify-self: stretch;
+    border-left: 10px solid #222931;
+    padding: 2em 0 1em 1em;
+  }
+  footer {
+    grid-area: footer;
+    align-self: flex-end;
+    justify-self: stretch;
+    margin-left: 10px;
+    border-top: 2px solid #222931;
+  }
+  h1 {
+    font-family: Aspergit;
+    text-align: center;
+    color: white;
+    margin-top: 4em;
+  }
+  section {
+    text-align: center;
+    margin-top: 4em;
+  }
+  #list {
+    list-style-type: none;
+    overflow: hidden;
+  }
+  #list li {
+    margin: 1%;
+  }
+  #list li a {
+    font-size: 1em;
+  }
+  h2 a {
+    color: #476e5e;
+  }
+  h2 a:hover {
+    background-color: #222931;
+  }
+  p {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  @font-face {
+    font-family: 'Xirod';
+    src: url("fonts/Xirod-Regular.eot");
+    src: url("fonts/Xirod-Regular.eot") format("embedded-opentype"), url("fonts/Xirod-Regular.woff2") format("woff2"), url("fonts/Xirod-Regular.woff") format("woff"), url("fonts/Xirod-Regular.ttf") format("truetype"), url("fonts/Xirod-Regular.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Aspergit';
+    src: url("fonts/Aspergit.eot");
+    src: url("fonts/Aspergit.eot") format("embedded-opentype"), url("fonts/Aspergit.woff2") format("woff2"), url("fonts/Aspergit.woff") format("woff"), url("fonts/Aspergit.ttf") format("truetype"), url("fonts/Aspergit.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  body {
+    margin: 0;
+    background-color: #c5ccc5;
+    background-image: url(background6.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: "header" "nav" "main"  "aside" "footer";
+  }
+  #hoved_innhold {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-bottom: 1%;
+  }
+  img {
+    width: 150px;
+    height: 100px;
+    float: left;
+    margin-right: 10px;
+    box-shadow: 5px 5px black;
+  }
+  header {
+    grid-area: header;
+    background: url(header_background5.jpg) center no-repeat;
+    background-size: cover;
+    align-self: stretch;
+    justify-self: stretch;
+  }
+  nav {
+    grid-area: nav;
+    align-self: start;
+    justify-self: stretch;
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #222931;
+  }
+  nav ul li {
+    float: left;
+  }
+  nav ul li a {
+    font-family: Xirod;
+    display: block;
+    color: #4ef1ad;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  nav ul li a:hover {
+    background-color: #bd331b;
+  }
+  nav ul li a:visited {
+    color: #f58ff5;
+  }
+  main {
+    grid-area: main;
+    align-self: flex-start;
+    justify-self: stretch;
+  }
+  aside {
+    grid-area: aside;
+    align-self: stretch;
+    justify-self: stretch;
+    padding: 2em 0 1em 1em;
+  }
+  footer {
+    grid-area: footer;
+    align-self: flex-end;
+    justify-self: stretch;
+    margin-left: 10px;
+    border-top: 2px solid #222931;
+  }
+  h1 {
+    font-family: Aspergit;
+    text-align: center;
+    color: white;
+    margin-top: 4em;
+  }
+  section {
+    text-align: center;
+    margin-top: 4em;
+  }
+  #list {
+    list-style-type: none;
+    overflow: hidden;
+  }
+  #list li {
+    margin: 1%;
+  }
+  #list li a {
+    font-size: 1em;
+  }
+  h2 a {
+    color: #476e5e;
+  }
+  h2 a:hover {
+    background-color: #222931;
+  }
+  p {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+}

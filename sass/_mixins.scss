@@ -1,0 +1,70 @@
+//Mixins:
+@font-face {
+    font-family: 'Xirod';
+    src: url('fonts/Xirod-Regular.eot');
+    src: url('fonts/Xirod-Regular.eot') format('embedded-opentype'),
+        url('fonts/Xirod-Regular.woff2') format('woff2'),
+        url('fonts/Xirod-Regular.woff') format('woff'),
+        url('fonts/Xirod-Regular.ttf') format('truetype'),
+        url('fonts/Xirod-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Aspergit';
+    src: url('fonts/Aspergit.eot');
+    src: url('fonts/Aspergit.eot') format('embedded-opentype'),
+        url('fonts/Aspergit.woff2') format('woff2'),
+        url('fonts/Aspergit.woff') format('woff'),
+        url('fonts/Aspergit.ttf') format('truetype'),
+        url('fonts/Aspergit.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@mixin gridfinc($rad, $klonne) {
+    display: grid;
+    grid-template-columns: $klonne;
+    grid-template-rows: $rad;
+}
+
+@mixin flex($flexdiric, $justifyCont) {
+    display: flex;
+    flex-direction: $flexdiric;
+    justify-content: $justifyCont;
+}
+@mixin self($align, $justify) {
+    align-self: $align;
+    justify-self: $justify;
+}
+@mixin navigation {
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #222931;
+        
+        li {
+            float: left;
+            a {
+                font-family: Xirod;
+                display: block;
+                color:  rgb(78, 241, 173);
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 15px;
+                &:hover {
+                    background-color: rgb(189, 51, 27);
+                }
+                &:visited {
+                    color: rgb(245, 143, 245) ;
+                }
+            }
+        }
+    }
+    
+}
+

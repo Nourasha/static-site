@@ -1,0 +1,180 @@
+@media only screen and (min-width: 700px) {
+@import "_var", "_mixins";
+//Style:
+body {
+    margin: 0;
+    background-color: $body_background;
+    background-image: url(background6.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+@include gridfinc(auto auto auto auto,2fr 1fr);
+    grid-template-areas: "header header"
+                         "nav nav"
+                         "main aside"
+                         "footer footer";
+}
+#hoved_innhold {
+    width: 90%;
+@include flex(column, start);
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-bottom: 1%;
+    
+}
+img { 
+    width: $width_img;
+    height: $hight_img;
+    float: left;
+    margin-right: 10px; 
+    box-shadow: $shadows;
+}
+header {
+    grid-area: header;
+    background: url(header_background5.jpg) center no-repeat;  
+    background-size: cover;
+@include self(stretch, stretch);
+}
+nav {
+    grid-area: nav;
+    @include self(start, stretch);
+    @include navigation()
+}
+main {
+    grid-area: main;
+    @include self(flex-start, stretch);
+}
+aside {
+    grid-area: aside;
+    @include self(stretch, stretch);
+    border-left: 10px solid #222931;
+    padding: 2em 0 1em 1em;
+    
+}
+footer {
+    grid-area: footer;
+    @include self(flex-end, stretch);
+    margin-left: 10px;
+    border-top: 2px solid #222931;
+}
+h1 {
+    font-family: $h1_font;
+    text-align: center;
+    color: white;
+    margin-top: 4em;
+}
+section {
+    text-align: center;
+    margin-top: 4em;
+}
+#list {
+    list-style-type: none;
+    overflow: hidden;
+}
+#list li {
+    margin: 1%;
+    
+}
+#list li a {
+    font-size: 1em;
+}
+h2 a {
+    color: #476e5e;
+}
+h2 a:hover {
+    background-color: #222931;
+}
+p {
+    font-family: $p_index_font
+}
+}
+
+
+@media only screen and (max-width: 700px) {
+@import "_var", "_mixins";
+//Style:
+body {
+    margin: 0;
+    background-color: $body_background;
+    background-image: url(background6.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+@include gridfinc(auto auto auto auto auto,auto);
+    grid-template-areas: "header"
+                         "nav"
+                         "main" 
+                         "aside"
+                         "footer";
+}
+#hoved_innhold {
+    width: 90%;
+@include flex(column, start);
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-bottom: 1%;
+    
+}
+img { 
+    width: $width_img;
+    height: $hight_img;
+    float: left;
+    margin-right: 10px; 
+    box-shadow: $shadows;
+}
+header {
+    grid-area: header;
+    background: url(header_background5.jpg) center no-repeat;  
+    background-size: cover;
+@include self(stretch, stretch);
+}
+nav {
+    grid-area: nav;
+    @include self(start, stretch);
+    @include navigation()
+}
+main {
+    grid-area: main;
+    @include self(flex-start, stretch);
+}
+aside {
+    grid-area: aside;
+    @include self(stretch, stretch);
+    padding: 2em 0 1em 1em;
+    
+}
+footer {
+    grid-area: footer;
+    @include self(flex-end, stretch);
+    margin-left: 10px;
+    border-top: 2px solid #222931;
+}
+h1 {
+    font-family: $h1_font;
+    text-align: center;
+    color: white;
+    margin-top: 4em;
+}
+section {
+    text-align: center;
+    margin-top: 4em;
+}
+#list {
+    list-style-type: none;
+    overflow: hidden;
+}
+#list li {
+    margin: 1%;
+    
+}
+#list li a {
+    font-size: 1em;
+}
+h2 a {
+    color: #476e5e;
+}
+h2 a:hover {
+    background-color: #222931;
+}
+p {
+    font-family: $p_index_font
+}
+}
